@@ -28,8 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm i
-          cp prettier-config-1.0.0.tgz node_modules/@zzdats/prettier-config/prettier-config-1.0.0.tgz
+          pnpm i -w '@wntr/lx-ui@latest'
 
       - name: Build Vue.js app
         run: pnpm dev
