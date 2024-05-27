@@ -24,13 +24,13 @@ jobs:
           node-version: 20.13.1
 
       - name: Setup pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm@latest-8
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm i
 
       - name: Build Vue.js app
-        run: pnpm run build
+        run: pnpm dev
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
