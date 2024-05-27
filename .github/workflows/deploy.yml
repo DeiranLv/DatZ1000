@@ -27,7 +27,7 @@ jobs:
         run: npm install -g pnpm@latest-8
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm i --prefer-offline
 
       - name: Build Vue.js app
         run: pnpm dev
