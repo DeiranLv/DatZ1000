@@ -26,9 +26,6 @@ jobs:
       - name: Setup pnpm
         run: npm install -g pnpm@latest-8
 
-      - name: Install dependencies
-        run: pnpm i
-
       - name: Build Vue.js app
         run: pnpm dev
 
