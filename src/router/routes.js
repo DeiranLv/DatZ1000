@@ -8,6 +8,42 @@ const routes = [
     },
     children: [
       {
+        path: '/dashboard',
+        name: 'dashboard',
+        meta: { title: 'Sākums' },
+        component: () => import('@/views/Dashboard.vue'),
+      },
+      {
+        path: '/dagda',
+        name: 'dagda',
+        meta: { title: 'Dagda' },
+        component: () => import('@/views/jl21080/dagda.vue'),
+      },
+      {
+        path: '/dagdabd',
+        name: 'dagdabd',
+        meta: { title: 'Dagdas bērnu dārzs' },
+        component: () => import('@/views/jl21080/dagdabd.vue'),
+      },
+      {
+        path: '/dagdavsk',
+        name: 'dagdavsk',
+        meta: { title: 'Dagdas vidusskola' },
+        component: () => import('@/views/jl21080/dagdavsk.vue'),
+      },
+      {
+        path: '/riga',
+        name: 'riga',
+        meta: { title: 'Rīga' },
+        component: () => import('@/views/jl21080/riga.vue'),
+      },
+      {
+        path: '/lu',
+        name: 'lu',
+        meta: { title: 'Latvijas Universitāte' },
+        component: () => import('@/views/jl21080/lu.vue'),
+      },
+      {
         path: '/login',
         name: 'login',
         meta: { title: 'pages.login.title' },

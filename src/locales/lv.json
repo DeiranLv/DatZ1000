@@ -8,13 +8,13 @@
     "shortName": "Demo"
   },
   "roles": {
-      "GAMER": "Ludomāns parastais",
-      "GAMER_ADMIN": "Ludomāns-eksperts",
-      "description": {
-        "GAMER": "Lietotājs bez īpašām tiesībām",
-        "GAMER_ADMIN": "Lietotājs ar maksimālām tiesībām"
-      }
-    },
+    "GAMER": "Ludomāns parastais",
+    "GAMER_ADMIN": "Ludomāns-eksperts",
+    "description": {
+      "GAMER": "Lietotājs bez īpašām tiesībām",
+      "GAMER_ADMIN": "Lietotājs ar maksimālām tiesībām"
+    }
+  },
   "shell": {
     "userProfile": "Skatīt profilu",
     "changeOrganization": "Mainīt iestādi",
@@ -49,13 +49,9 @@
       "title": "Izvēlieties autorizācijas veidu"
     },
     "home": {
-      "title": "LX Demo",
+      "title": "DV uz LU",
       "buttons": {
-        "login": "Sākt ar autorizāciju (VPM)",
-        "loginPKIP": "Sākt ar autorizāciju (PKIP)",
-        "loginAuthorized": "Sākt bez autorizācijas",
-        "loginUnauthorized": "Autorizēties",
-        "tools": "Izstrādātāju rīki"
+        "loginAuthorized": "Sākt"
       }
     },
     "secureDemo": {

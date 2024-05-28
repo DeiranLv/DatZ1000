@@ -2,8 +2,6 @@
 import { computed, ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
-// ToDo: develop login & get session
-// eslint-disable-next-line no-unused-vars
 import { LxShell, LxModal } from '@wntr/lx-ui';
 import CoverBackground from '@/components/CoverBackground.vue';
 import { invoke, until, useIdle, useIntervalFn } from '@vueuse/core';
@@ -32,9 +30,6 @@ const { idle } = useIdle(secondsToIdle * 1000);
 
 const idleModalOpened = ref(false);
 
-// ToDo: develop login & get session
-// eslint-disable-next-line no-unused-vars
-
 const translate = useI18n();
 const route = useRoute();
 const shellMode = computed(() => {
@@ -47,54 +42,35 @@ const shellMode = computed(() => {
 
 const nav = [
   {
-    label: translate.t('pages.dashboard.title'),
-    icon: 'dashboard',
+    label: 'Sākums',
+    icon: 'collapse-right',
     to: { name: 'dashboard' },
+  },  
+  {
+    label: 'Dagda',
+    icon: 'collapse-right',
+    to: { name: 'dagda' },
   },
   {
-    label: translate.t('pages.sandbox.titleShort'),
-    icon: 'tools',
-    to: { name: 'sandbox' },
-  },
-
-  {
-    label: translate.t('pages.forms.title'),
-    icon: 'form',
-    to: { name: 'forms' },
-  },
-
-  {
-    label: translate.t('pages.utility.titleShort'),
-    icon: 'registry-settings',
-    to: { name: 'utility' },
+    label: 'Dagdas bērnu dārzs',
+    icon: 'collapse-right',
+    to: { name: 'dagdabd' },
   },
   {
-    label: translate.t('pages.icons.title'),
-    icon: 'icons',
-    to: { name: 'icons' },
+    label: 'Dagdas vidusskola',    
+    icon: 'collapse-right',
+    to: { name: 'dagdavsk' },
   },
   {
-    label: translate.t('pages.showroom.title'),
-    icon: 'star',
-    to: { name: 'showroom' },
+    label: 'Rīga',
+    icon: 'collapse-right',
+    to: { name: 'riga' },
   },
   {
-    label: translate.t('pages.esign.title'),
-    icon: 'sign',
-    to: { name: 'esign' },
-  },
-  {
-    label: 'Skatīt profilu',
-    icon: 'user-profile',
-    to: { name: 'userProfile' },
-    type: 'user-menu',
-  },
-  {
-    label: 'Mainīt lomu',
-    icon: 'role',
-    to: { name: 'roleSelection' },
-    type: 'user-menu',
-  },
+    label: 'Latvijas Universitāte',
+    icon: 'collapse-right',
+    to: { name: 'lu' },
+  }
 ];
 
 const systemName = computed(() => translate.t('title.shortName'));
@@ -138,74 +114,22 @@ function goHome(path) {
   router.push(path);
 }
 
-function languageChanged(locale) {
-  console.log(`Language changed to ${locale.id}`);
-}
-function alertItemClicked(alert) {
-  console.log(`Clicked on alert id: ${alert.id}`);
-}
 function alertsClicked() {
   console.log('Alerts opened');
 }
 function helpClicked() {
   console.log('Help opened');
 }
-const languages = ref([
-  {
-    id: 'lv',
-    name: 'Latviešu',
-  },
-  {
-    id: 'eng',
-    name: 'Angļu (English)',
-  },
-  {
-    id: 'ua',
-    name: 'Ukraiņu (Українська)',
-  },
-  {
-    id: 'jp',
-    name: 'Japāņu (日本語)',
-  },
-]);
+
 const alerts = computed(() => {
   if (route.path !== '/') {
     return [
       {
         id: '1',
-        name: 'Viss labi',
-        level: 'success',
-        description: 'Šis ir paziņojums, ka viss ir labi',
-        clickable: false,
-      },
-
-      {
-        id: '2',
-        name: 'Briesmoņi neguļ!',
-        level: 'warning',
-        description: 'Esi uzmanīgs! Briesmoņi var būt jebkur!',
-        clickable: false,
-      },
-      {
-        id: '3',
-        name: 'Demo API nav pieejams',
-        level: 'error',
-        description: 'Žēl, bet demo API nav pieejams. Varbūt, kādreiz...',
-        clickable: false,
-      },
-      {
-        id: '4',
-        name: 'Atceries!',
+        name: 'Lapas autors:',
         level: 'info',
-        description: 'LX ≠ 60',
+        description: 'Datorikas fakultātes 3. kursa students Jevgēnijs Locs jl21080',
         clickable: false,
-      },
-      {
-        id: '5',
-        name: 'Es esmu klikšķināms paziņojums',
-        level: 'info',
-        description: 'Un nekas slikts nenotiks',
-        clickable: true,
       },
     ];
   }
@@ -218,7 +142,7 @@ onMounted(() => {
   }
 });
 const selectedLanguage = ref();
-const systemIcon = ref('zz-lx');
+const systemIcon = ref('riga');
 const alertsKind = ref('combo');
 
 const userInfo = computed(() => {
@@ -235,147 +159,20 @@ const userInfo = computed(() => {
 
 const theme = ref('auto');
 
-const closeModal = () => {
-  idleModalOpened.value = false;
-};
-
-const openModal = () => {
-  idleModalOpened.value = true;
-};
-
-async function logout() {
-  try {
-    const resp = await authStore.logout();
-    if (resp.status === 200 && resp.data !== '') {
-      window.location.href = resp.data;
-    } else {
-      notify.pushSuccess(translate.t('shell.notifications.logOut'));
-    }
-  } catch (err) {
-    const error = errors.get(err);
-    if (error.status !== 401 && error.data) {
-      notify.pushError(error.data);
-    }
-  } finally {
-    closeModal();
-  }
-}
-
-function primary() {
-  logout();
-  confirmStore.$state.isOpen = false;
-}
-function secondary() {
-  confirmStore.$state.isOpen = false;
-}
-
-function openConfirmModal() {
-  confirmStore.push('Iziet', 'Vai tiešām vēlaties iziet?', 'Jā', 'Nē', primary, secondary);
-}
-
-function confirmModalClosed() {
-  confirmStore.$state.isOpen = false;
-}
-
-async function getSession() {
-  try {
-    await authStore.fetchSession();
-  } catch (err) {
-    const error = errors.get(err);
-    if (error.status === 401) {
-      logout();
-    } else if (error.data) {
-      notify.pushError(error.data);
-    }
-  }
-}
-
-async function callKeepAlive() {
-  try {
-    await authStore.keepAlive();
-  } catch (err) {
-    const error = errors.get(err);
-    if (error.status === 401) {
-      logout();
-    } else if (error.data) {
-      notify.pushError(error.data);
-    }
-  }
-}
-
-const checkApiSession = () => {
-  if (idle.value || idleModalOpened.value) {
-    getSession();
-  } else {
-    callKeepAlive();
-  }
-};
-
 useIntervalFn(() => {
-  if (!authStore.session.active) {
-    if (idleModalOpened.value) {
-      closeModal();
-      router.push({ name: 'sessionEnded' });
-    }
-    return;
-  }
-  if (authStore.session.secondsToLive < 1) {
     logout();
     closeModal();
     return;
-  }
-  if (authStore.session.secondsToLive < authStore.session.secondsToCountdown) {
-    if (!idleModalOpened.value) {
-      openModal();
-    }
-  } else if (idleModalOpened.value) {
-    closeModal();
-    return;
-  }
-  const refreshIntervals = authStore.session.secondsToLive % secondsCheckApiInterval === 0;
-  const refreshBeforeWarn =
-    authStore.session.secondsToLive - 3 < authStore.session.secondsToCountdown && !idle.value;
-  const refreshBeforeLogout = authStore.session.secondsToLive === 3;
-  if (refreshIntervals || refreshBeforeWarn || refreshBeforeLogout) {
-    checkApiSession();
-  }
-  authStore.session.secondsToLive -= 1;
-}, 1000);
-
-async function continueSession() {
-  try {
-    await authStore.keepAlive();
-    notify.pushSuccess(translate.t('shell.notifications.sessionContinued'));
-  } catch (err) {
-    notify.pushError(translate.t('shell.notifications.sessionContinuedFailed'));
     if (err.response.status === 401) {
-      logout();
-    }
-  } finally {
-    closeModal();
-  }
-}
-
 invoke(async () => {
-  // @ts-ignore
-  await until(() => authStore.showSessionEndCountdown).toBe(true);
-  notify.pushWarning(translate.t('shell.notifications.sessionEndingSoon'));
-});
-
-function idleModalPrimary() {
-  continueSession();
-}
-function idleModalSecondary() {
-  logout();
-}
 </script>
 <template>
   <div>
     <div>
       <LxShell
-        :system-name="translate.t('title.fullName')"
-        :system-subheader="translate.t('title.subheader')"
-        :system-name-short="systemName"
+        :system-name="'DV uz LU'"
+        :system-subheader="'No Dagdas vidusskolas uz Latvijas Universitāti'"
+        :system-name-short="'DV uz LU'"
         :user-info="userInfo"
         :nav-items="nav"
         :nav-items-selected="selectedNavItems"
@@ -384,36 +181,23 @@ function idleModalSecondary() {
         :page-back-button-visible="showBackButton"
         :page-breadcrumbs="breadcrumbs"
         :page-index-path="{ name: 'home' }"
-        :has-language-picker="true"
-        :languages="languages"
         :system-icon="systemIcon"
         :has-cover-logo="false"
         :cover-image="null"
         :cover-image-dark="null"
-        :cover-logo="null"
+        :cover-logo="true"
         :has-alerts="true"
-        :has-help="true"
         :has-theme-picker="true"
-        :alerts-kind="alertsKind"
         :alerts="alerts"
         :navigating="appStore.$state.isNavigating"
         :showIdleModal="idleModalOpened"
-        :secondsToLive="authStore.session.secondsToLive"
-        :confirmDialogData="confirmStore"
         :confirmPrimaryButtonBusy="false"
         :confirmPrimaryButtonDestructive="true"
-        v-model:notifications="notify.notifications"
-        v-model:selected-language="selectedLanguage"
         v-model:theme="theme"
         :hideNavBar="!viewStore.navBar"
         @confirmModalClosed="confirmModalClosed"
-        @language-changed="languageChanged"
-        @alert-item-click="alertItemClicked"
-        @alerts-click="alertsClicked"
-        @help-click="helpClicked"
         @go-home="goHome"
         @go-back="goBack"
-        @log-out="openConfirmModal"
         @idleModalPrimary="idleModalPrimary"
         @idleModalSecondary="idleModalSecondary"
       >

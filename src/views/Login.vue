@@ -13,13 +13,6 @@ const pkipClientID = window.config.pkipClientId;
   <LxButton
     :href="{ name: 'dashboard' }"
     :label="i18n.t('pages.home.buttons.loginAuthorized')"
-    icon="dashboard"
-  />
-  <LxButton
-    v-if="!authStore.isAuthorized"
-    :href="{ name: 'signin' }"
-    kind="secondary"
-    :label="i18n.t('pages.home.buttons.loginUnauthorized')"
-    icon="next"
+    icon="arrow-right"
   />
 </template>
