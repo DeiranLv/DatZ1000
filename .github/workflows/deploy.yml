@@ -33,24 +33,6 @@ jobs:
       - name: Build Vue.js app
         run: pnpm build
 
-      - name: Delete old artifacts
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const artifacts = await github.rest.actions.listArtifactsForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo
-            });
-            for (const artifact of artifacts.data.artifacts) {
-              if (artifact.name === 'build') {
-                await github.rest.actions.deleteArtifact({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  artifact_id: artifact.id
-                });
-              }
-            }
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
