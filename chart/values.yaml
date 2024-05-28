@@ -44,7 +44,7 @@ service:
 
 config:
   environments:
-    PUBLIC_URL: https://lx-dev.zzdats.lv/
+    PUBLIC_URL: https://deiranlv.github.io/DatZ1000/
     # BASE_PATH is "/" by default
     BASE_PATH: /
     ENVIRONMENT: development
