@@ -28,7 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm install -w '@wntr/lx-ui@latest'
+          pnpm install
 
       - name: Build Vue.js app
         run: pnpm dev
