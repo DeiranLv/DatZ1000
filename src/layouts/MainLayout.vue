@@ -159,12 +159,6 @@ const userInfo = computed(() => {
 
 const theme = ref('auto');
 
-useIntervalFn(() => {
-    logout();
-    closeModal();
-    return;
-    if (err.response.status === 401) {
-invoke(async () => {
 </script>
 <template>
   <div>
