@@ -103,7 +103,7 @@ const getEnvVariables = (mode, serving) => {
     envVariables.VUE_APP_SERVICE_URL = envVariables.VUE_APP_SERVICE_URL || '{{SERVICE_URL}}';
     envVariables.VUE_APP_AUTH_URL = envVariables.VUE_APP_AUTH_URL || '{{AUTH_URL}}';
     envVariables.BASE_PATH = envVariables.BASE_PATH || './';
-    envVariables.BASE_URL = envVariables.BASE_URL || '{{PUBLIC_URL}}';
+    envVariables.BASE_URL = envVariables.BASE_URL || './';
     envVariables.VUE_APP_CLIENT_ID = envVariables.VUE_APP_CLIENT_ID || CONFIG.defaultClient;
   }
   return envVariables;
