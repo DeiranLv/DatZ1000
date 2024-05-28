@@ -31,7 +31,7 @@ jobs:
           pnpm install
 
       - name: Build Vue.js app
-        run: pnpm dev
+        run: pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
