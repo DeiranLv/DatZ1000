@@ -33,6 +33,7 @@ jobs:
       - name: Build Vue.js app
         env:
           BASE_PATH: /
+          PUBLIC_PATH: /DatZ1000/
         run: pnpm build
 
       - name: Upload artifact
