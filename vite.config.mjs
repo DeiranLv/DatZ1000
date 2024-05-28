@@ -16,11 +16,11 @@ import packageJson from './package.json';
 dns.setDefaultResultOrder('ipv4first');
 
 const CONFIG = {
-  appName: 'LX Demo',
-  appDescription: 'LX Demo portāls',
+  appName: 'No Dagdas vidusskolas uz Latvijas universitāti',
+  appDescription: 'Jevgēnijs Locs',
   defaultUrl: 'https://localhost:44341/',
-  defaultClient: 'demo',
-  defaultClientDebug: 'demo',
+  defaultClient: 'jl21080',
+  defaultClientDebug: 'jl21080',
   defaultPKIPClientId: 'demo-pkip',
 };
 
@@ -103,7 +103,7 @@ const getEnvVariables = (mode, serving) => {
     envVariables.VUE_APP_SERVICE_URL = envVariables.VUE_APP_SERVICE_URL || '{{SERVICE_URL}}';
     envVariables.VUE_APP_AUTH_URL = envVariables.VUE_APP_AUTH_URL || '{{AUTH_URL}}';
     envVariables.BASE_PATH = envVariables.BASE_PATH || './';
-    envVariables.BASE_URL = envVariables.BASE_URL || '{{PUBLIC_URL}}';
+    envVariables.BASE_URL = envVariables.BASE_URL;
     envVariables.VUE_APP_CLIENT_ID = envVariables.VUE_APP_CLIENT_ID || CONFIG.defaultClient;
   }
   return envVariables;
