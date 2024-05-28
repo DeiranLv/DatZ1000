@@ -124,7 +124,7 @@ export default defineConfig((command) => {
     : [];
   const useMockServer = serving && mockUrlPrefixes.length > 0;
   return {
-    base: isProduction ? '/DatZ1000/' : '/',
+    base: envVariables.BASE_PATH,
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
