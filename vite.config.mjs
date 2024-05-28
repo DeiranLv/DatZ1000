@@ -73,7 +73,7 @@ const getEnvVariables = (mode, serving) => {
     BASE_PATH: env.BASE_PATH,
     BASE_URL: env.PUBLIC_URL,
 
-    GIT_LX_UI_URL: env.GIT_LX_UI_URL || 'https://git.zzdats.lv/lx/ui',
+    GIT_LX_UI_URL: env.GIT_LX_UI_URL || 'https://github.com/wntrtech/lx-ui',
     // dev only
     VUE_APP_SERVICE_URL_PROXY: '',
     MOCK_SERVICE: false,
@@ -118,9 +118,9 @@ export default defineConfig((command) => {
   const envVariables = getEnvVariables(command.mode, serving);
   const mockUrlPrefixes = serving
     ? [
-        envVariables.MOCK_SERVICE && envVariables.VUE_APP_SERVICE_URL,
-        envVariables.MOCK_AUTH && envVariables.VUE_APP_AUTH_URL,
-      ].filter(Boolean)
+      envVariables.MOCK_SERVICE && envVariables.VUE_APP_SERVICE_URL,
+      envVariables.MOCK_AUTH && envVariables.VUE_APP_AUTH_URL,
+    ].filter(Boolean)
     : [];
   const useMockServer = serving && mockUrlPrefixes.length > 0;
   return {
@@ -142,13 +142,13 @@ export default defineConfig((command) => {
         },
       }),
       useMockServer &&
-        mockServer({
-          logLevel: 'info',
-          urlPrefixes: mockUrlPrefixes,
-          mockRootDir: './mock',
-          mockJsSuffix: '.mock.js',
-          noHandlerResponse404: true,
-        }),
+      mockServer({
+        logLevel: 'info',
+        urlPrefixes: mockUrlPrefixes,
+        mockRootDir: './mock',
+        mockJsSuffix: '.mock.js',
+        noHandlerResponse404: true,
+      }),
       serving && mkcert(),
     ],
     build: {
