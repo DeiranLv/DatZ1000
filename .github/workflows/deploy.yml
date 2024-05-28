@@ -31,6 +31,8 @@ jobs:
           pnpm install
 
       - name: Build Vue.js app
+        env:
+          BASE_PATH: /
         run: pnpm build
 
       - name: Upload artifact
