@@ -21,19 +21,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20.13.1
+          node-version: '20.13.1'
 
       - name: Setup pnpm
         run: npm install -g pnpm@latest-8
 
       - name: Install dependencies
-        run: |
-          pnpm install
+        run: pnpm install
 
       - name: Build Vue.js app
         env:
-          BASE_PATH: /
-          PUBLIC_PATH: /DatZ1000/
+          BASE_URL: /DatZ1000/ # This should match the `base` property in vite.config.mjs
         run: pnpm build
 
       - name: Upload artifact
