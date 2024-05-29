@@ -44,6 +44,18 @@ const routes = [
         component: () => import('@/views/jl21080/lu.vue'),
       },
       {
+        path: '/dagdahome',
+        name: 'dagdahome',
+        meta: { title: 'Mājas Dagdā' },
+        component: () => import('@/views/jl21080/dagdahome.vue'),
+      },
+      {
+        path: '/rigahome',
+        name: 'rigahome',
+        meta: { title: 'Mājas Rīgā' },
+        component: () => import('@/views/jl21080/rigahome.vue'),
+      },
+      {
         path: '/login',
         name: 'login',
         meta: { title: 'pages.login.title' },

@@ -70,6 +70,16 @@ const nav = [
     label: 'Latvijas Universitāte',
     icon: 'collapse-right',
     to: { name: 'lu' },
+  },
+  {
+    label: 'Mājas Dagdā',
+    icon: 'collapse-right',
+    to: { name: 'dagdahome' },
+  },
+  {
+    label: 'Mājas Rīga',
+    icon: 'collapse-right',
+    to: { name: 'rigahome' },
   }
 ];
 
