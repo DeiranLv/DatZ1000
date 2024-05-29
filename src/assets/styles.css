@@ -104,7 +104,7 @@
 
 .icon-display .icon:not(.lx-empty):hover {
   background-color: var(--color-region-hover-background);
-  border-radius: 50%; 
+  border-radius: 50%;
   cursor: pointer;
 }
 

@@ -27,7 +27,7 @@ import {
         volutpat sed libero at, rutrum semper elit. Nam at.
       </LxRow>
       <LxRow :column-span="1">
-        <img src="./img/Coat_of_Arms_of_Riga_small.svg.png" alt="Rīgas ģērbonis">
+        <img src="./img/Coat_of_Arms_of_Riga_small.png" alt="Rīgas ģērbonis">
       </LxRow>
       <LxRow :column-span="4">
         <img src="./img/lu.jpg" alt="Latvijas Universitāte">
