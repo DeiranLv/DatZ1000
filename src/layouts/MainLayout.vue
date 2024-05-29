@@ -52,6 +52,11 @@ const nav = [
     to: { name: 'dagda' },
   },
   {
+    label: 'Mājas Dagdā',
+    icon: 'collapse-right',
+    to: { name: 'dagdahome' },
+  },
+  {
     label: 'Dagdas bērnu dārzs',
     icon: 'collapse-right',
     to: { name: 'dagdabd' },
@@ -67,19 +72,14 @@ const nav = [
     to: { name: 'riga' },
   },
   {
+    label: 'Mājas Rīgā',
+    icon: 'collapse-right',
+    to: { name: 'rigahome' },
+  },
+  {
     label: 'Latvijas Universitāte',
     icon: 'collapse-right',
     to: { name: 'lu' },
-  },
-  {
-    label: 'Mājas Dagdā',
-    icon: 'collapse-right',
-    to: { name: 'dagdahome' },
-  },
-  {
-    label: 'Mājas Rīga',
-    icon: 'collapse-right',
-    to: { name: 'rigahome' },
   }
 ];
 

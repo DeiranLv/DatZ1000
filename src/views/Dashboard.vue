@@ -80,15 +80,15 @@ onMounted(async () => {
 <template>
   <div>
     <div class="lx-dashboard" width="m" height="s">
-      <LxTile icon="open" :label="'Dagda'" description="Dzimtā vieta" :to="{ name: 'dagda' }"/>
-      <LxTile icon="open" :label="'Dagdas bērnu dārzs'" description="Pirmie dzīves gājuma soļi" :to="{ name: 'dagdabd' }" />
-      <LxTile icon="open" :label="'Dagdas vidusskola'" description="" :to="{ name: 'dagdavsk' }" />
-      <LxTile icon="open" :label="'Rīga'" description="Jauna vieta, jauni izaicinājumi" :to="{ name: 'riga' }" />
-      <LxTile icon="open" :label="'Latvijas Universitāte'" :to="{ name: 'lu' }" />
-      <LxTile icon="open" :label="'Mājas Dagdā'" :to="{ name: 'dagdahome' }" />
-      <LxTile icon="open" :label="'Mājas Rīgā'" :to="{ name: 'rigahome' }" />
+      <LxTile icon="open" :label="'Dagda'" description="Dzimtā vieta" :to="{ name: 'dagda' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Mājas Dagdā'" description="Pirmās mājas" :to="{ name: 'dagdahome' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Dagdas bērnu dārzs'" description="Pirmie dzīves gājuma soļi" :to="{ name: 'dagdabd' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Dagdas vidusskola'" description="Gūstot pamatzināšanas un socializējoties" :to="{ name: 'dagdavsk' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Rīga'" description="Ceļā uz izaicinājumu pilnu dzīvi" :to="{ name: 'riga' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Mājas Rīgā'" description="Otrās mājas" :to="{ name: 'rigahome' }" style="font-size: 20px;" />
+      <LxTile icon="open" :label="'Latvijas Universitāte'" description="Vieta, kur kļūt par profesionālu" :to="{ name: 'lu' }" style="font-size: 20px;" />
       <LxWidget width="s" height="s" label="Darba autors:">
-        <div class="stats">Datorikas fakultātes 3. kursa students Jevgēnijs Locs jl21080</div>
+        <div class="stats" style="font-size: 18px;">Datorikas fakultātes 3. kursa students <b>Jevgēnijs Locs</b> jl21080</div>
       </LxWidget>
     </div>
   </div>
