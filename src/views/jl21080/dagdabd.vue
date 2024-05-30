@@ -16,15 +16,16 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Dagdas bērnu dārzs ir vieta, kur sākās mans izglītības ceļš un bija pirmā pieredze sabiedriskajā dzīvē.
+        Šeit, starp rotaļām un mācībām, es atradu savus pirmos draugus, ar kuriem vēlāk mācījos vidusskolā.
+        Bērnu dārzā esmu piedalījies daudzos pasākumos un aktivitātēs, kas veicināja manu radošumu un zinātkāri.
+        Mēs zīmējām, dziedājām, mācījāmies skaitīt un lasīt. Katra diena bija pilna jaunu piedzīvojumu.
+        Audzinātāju rūpes un pacietība bija nenovērtējamas, un viņu ieguldījums mūsu attīstībā bija milzīgs.
+        Vislabākās atmiņas man saistās ar pavasara beigām, kad ārā bija jauks laiks un gaisā virmoja brīvlaika sajūta.
+        Šis bija laiks, kad mēs, mazie bērni, ar nepacietību gaidījām brīvdienas.Savas vasaras brīvdienas pavadīju pie vecvecākiem laukos,
+        bet rudenī vienmēr ar prieku atgriezos uz bērnu dārzu, kur atkal varēju satikt savus draugus.
+        Dagdas bērnu dārzs ir vieta, kur es iemācījos būt draudzīgs, ziņkārīgs un atvērts jauniem izaicinājumiem.
+        Lai gan tagad dzīvoju Rīgā un mācos Latvijas Universitātē, Dagdas bērnu dārzs vienmēr paliks vieta, kur sākās mans ceļš uz izglītību.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Dagda.png" alt="Dagdas ģērbonis">

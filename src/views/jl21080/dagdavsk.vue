@@ -16,15 +16,11 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Dagdas vidusskola ir vieta, kur esmu pavadījis nozīmīgu daļu savas bērnības un pusaudžu gadu.
+        Skolas sienās ieguvu ne tikai zināšanas, bet arī daudz neaizmirstamu atmiņu un draugu.
+        Varu lepoties ar to, ka esmu aizstāvējis skolas godu, piedaloties dažādās olimpiādēs. Ar skolotāju un klasesbiedru atbalstu esmu guvis vairāku priekšmetu olimpiādēs, kas ne tikai stiprināja manu zināšanu bāzi, bet arī deva pārliecību par saviem spēkiem. Katrs sasniegums bija kā solis ceļā uz manu nākotni. Skolotāju ieguldījums šajā dzīves ceļā ir nenovērtējams.
+        Atgriežoties Dagdā un ejot garām skolai, vienmēr iekritu atmiņās. Klases stundas, sporta sacensības un draugu smiekli ir tik labi palikuši atmiņā, it kā tas viss būtu noticis vakar.  Vismīļākais skolas laiks bija otro semestru beigas, kad ārā bija jauks laiks un gaisā virmoja brīvlaika sajūta. Šis bija laiks, kad mēs, skolēni, ar nepacietību gaidījām vasaru, baudot pēdējās skolas dienas siltajos saules staros. Pēc stundām bieži vien pulcējāmies skolas pagalmā vai gājām pastaigās pa tuvējo apkārtni, izbaudot brīvības sajūtu.
+        Dagdas vidusskola ir vieta, kur ieguvu ne tikai zināšanas, bet arī komunikācijas prasmes un citas svarīgas iemaņas. Lai gan tagad dzīvoju un studēju Rīgā, Dagdas vidusskola vienmēr būs mans izglītības šūpulis un vieta, kur veidoju savu personību.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Dagda.png" alt="Dagdas ģērbonis">

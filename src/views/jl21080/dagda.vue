@@ -16,15 +16,17 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Dagda, mazpilsēta Latgales sirdī, vienmēr būs manas mājas. Lai gan tagad dzīvoju un studēju Rīgā,
+        Dagda ir vieta, kur pavadīju visu savu bērnību, un tā joprojām ir mana sirds vieta. Šeit, starp zaļajiem mežiem un zilajiem ezeriem,
+        manas dienas pagāja burvīgi, pavadot laiku ar draugiem, ejot makšķerēt un izzinot dabas noslēpumus.
+        Katru reizi, kad atgriežos Dagdā, jūtos kā laika mašīnā – viss šķiet tik pazīstams, tomēr ar katru apmeklējumu es pamanu arī pārmaiņas.
+        Vecie draugi ir pieauguši, daži pārcēlušies uz citām pilsētām, bet daži palikuši turpat. Pilsētas parks, kur agrāk skrējām un spēlējāmies,
+        joprojām ir vieta, kur var satikties, atpūsties un uzzināt, kas dzīvē ir noticis jauns.
+        Dagda ir ne tikai manas bērnības atmiņas, bet arī vieta, kur izaugu un ieguvu iemaņas, kas nepieciešamas pieauguša cilvēka dzīvē.
+        Dagdā cilvēki ir sirsnīgi, viesmīlīgi un vienmēr gatavi palīdzēt. Katru reizi, kad atgriežos, mani sagaida ar prieku,
+        un tas rada sajūtu, ka esmu atgriezies mājās.
+        Lai gan Rīga piedāvā plašas iespējas izglītībai un karjerai, Dagda vienmēr būs mana miera un prieka oāze.
+        Šeit ir mana pagātne, manas saknes un vieta, kur vienmēr atgriezīšos ar prieku.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Dagda.png" alt="Dagdas ģērbonis">

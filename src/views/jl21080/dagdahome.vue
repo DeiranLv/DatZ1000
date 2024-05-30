@@ -16,16 +16,9 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
-        <br><br>
+        Mana dzimtā māja ir miers un siltums iesprostots ķieģeļu ēkā. Tā stāv kalna virsotnē, pār slēgtu dārzu, kurā vasarā plaukst krāšņas puķes un ābeles, bet pavasarī skan putniņu dziesmas. Šajā mājā pavadīju visu savu laiku līdz tiku pieņemts Latvijas Universitātē un pārvācos uz Rīgu. Katram stūrim ir savs stāsts, ko esmu piedzīvojis kopā ar saviem ģimenes locekļiem, un katrai istabai ir sava īpašā atmosfēra.
+        Atgriežoties uz brīvlaiku, vienmēr esmu priecīgs, ka varu pavadīt vēl kādu laiku savās dzimtajās mājās, kopā ar ģimenes biedriem: vecākiem, vecmammu un brāli, kā arī saviem mājdzīvniekiem, kas vienmēr priecājās, pamanot mani pie mājas sliekšņa. Kad daru kādu darbiņu, vienmēr var iekrist domās un atpūsties no straujās pilsētas dzīves. Pēc darbu izpildes var doties garā pastaigā pa dzimto pilsētu, kur varēs satikties ar draugiem un labi pavadīt laiku kopā.
+        Šī māja nav tikai ķieģeļu ēka – tā ir mana pagātne, tagadne, iespējams, arī nākotne, kurā glabājas manas ģimenes sirds un dvēsele.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Dagda.png" alt="Dagdas ģērbonis">

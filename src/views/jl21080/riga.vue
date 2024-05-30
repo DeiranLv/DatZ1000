@@ -16,15 +16,16 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Pēc vidusskolas beigšanas vēlējos turpināt studijas Rīgā, tāpēc arī izvēlējos studēt tieši šajā pilsētā.
+        Rīga ir Latvijas galvaspilsēta un izglītības, kultūras un inovāciju centrs, piedāvājot plašas iespējas akadēmiskajai un personīgajai izaugsmei.
+        Šeit ir koncentrētas daudzas prestižas augstskolas, tostarp arī Latvijas Universitāte, kurā nolēmu studēt.
+        Studijas Rīgā man ir devušas iespēju iepazīt daudzveidīgu un dinamisku dzīvi, salīdzinot ar Dagdu.
+        Pilsēta piedāvā daudzveidīgas izklaides iespējas, kultūras pasākumus un sporta aktivitātes, kas padarīja manu dzīvi interesantāku un aizraujošāku.
+        Papildus akadēmiskajām zināšanām esmu ieguvis arī vērtīgu pieredzi, piedaloties dažādos studentu pasākumos.
+        Kā arī esmu atradis darbu IT nozarē, kas ļaus arī turpmāk sasaistīt savu dzīvi tieši ar šo nozari.
+        Dzīvojot Rīgā, esmu iepazinis arī dažādus cilvēkus no dažādām Latvijas vietām un ārvalstīm, kas ļāva man paplašināt savu redzesloku.
+        Rīga ir pilsēta, kas piedāvā neierobežotas iespējas gan mācībām, gan personīgajai attīstībai. Esmu pārliecināts, ka izvēlējos pareizo vietu savas dzīves turpināšanai.
+        Rīga ir kļuvusi par manām otrajām mājām, kurā es ar prieku pavadu savu laiku.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Riga_small.png" alt="Rīgas ģērbonis">

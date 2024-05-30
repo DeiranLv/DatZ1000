@@ -16,15 +16,13 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Uzsākot studijas universitātē, bija jāmaina dzīves vieta, jo nav iespējams studēt 250 km attālumā no universitātes.
+        Bija divi varianti: dzīvot kojās vai dzīvot dzīvokli. Izvēlējos otro variantu. Šobrīd nevar spriest, kāds no variantiem labāks,
+        jo kojās nebiju dzīvojis, bet esmu dzirdējis, ka tur ir diezgan jautri, ja apkārt ir labi cilvēki, tomēr arī savā dzīvoklī ir labi dzīvot.
+        Protams, šī dzīves vieta nespēja man aizstāt māju Dagdā, bet šeit es arī jūtos labi un komfortabli. Dzīvoju diezgan tuvu Mežaparkam,
+        tāpēc bieži eju pastaigā uz šo parku, kur arī var atpūsties no straujās pilsētas dzīves. Iespējams, ka pēc studijām būs jāmeklē jaunu dzīves vietu,
+        bet vēl ir laiks visu apdomāt un izlemt, kur ir labāk dzīvot, ņemot vērā, ka, strādājot kā programmētājs, var rakstīt kodu attālināti,
+        kaut no citas valsts. Bet noteikti varu teikt, ka esmu priecīgs, pavadot savus studiju gadus šajā mājā Rīgas nomalē.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Riga_small.png" alt="Rīgas ģērbonis">

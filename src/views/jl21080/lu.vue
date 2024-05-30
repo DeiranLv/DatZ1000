@@ -16,15 +16,14 @@ import {
       :show-header="false"
       >
       <LxRow :column-span="3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae efficitur justo, sit amet pharetra lorem. 
-        Nam dapibus, quam et rutrum convallis, lacus est consequat massa, et varius arcu risus in nibh. Duis tincidunt 
-        dolor mauris, ut elementum nisl auctor sit amet. Fusce fringilla efficitur sem quis imperdiet. Aenean faucibus 
-        tincidunt consequat. Sed mi ligula, auctor nec dapibus id, rutrum ut purus. Sed venenatis sed magna gravida cursus. 
-        Ut sit amet augue aliquet, porta augue ut, cursus felis. In elementum, massa sit amet porta facilisis, lectus eros 
-        congue ante, sollicitudin rhoncus augue ante a libero. Maecenas et dui sit amet odio consectetur mattis. Donec vel 
-        dui vitae mauris cursus ultrices rutrum tempor quam. Sed nec odio orci. Morbi quam nibh, auctor sit amet ullamcorper 
-        sed, dignissim a erat. Quisque accumsan gravida faucibus. Sed suscipit nibh ac finibus auctor. Mauris lacus neque, 
-        volutpat sed libero at, rutrum semper elit. Nam at.
+        Latvijas Universitāte (LU) ir viena no vadošajām augstākās izglītības iestādēm Latvijā, piedāvājot plašu akadēmisko programmu klāstu dažādās zinātņu nozarēs.
+        Izvēlējos studēt datorzinātnes un šobrīd jau kā 3. kursa students LU Datorikas fakultātē, esmu guvis daudzpusīgu un padziļinātu zināšanu bāzi informācijas tehnoloģiju un programmēšanas jomās.
+        Mūsu fakultāte ir pazīstama ar augstu izglītības kvalitāti, modernu mācību vidi un ciešu sadarbību ar nozares uzņēmumiem, kas īpaši jūtama prakses periodā.
+        Studijas Datorikas fakultātē man ir devušas iespēju apgūt dažādas programmēšanas valodas, datu bāzu pārvaldību, tīkla administrēšanu un citas būtiskas prasmes. Mēs bieži piedalāmies dažādos projektos un laboratorijas darbos, kas palīdz attīstīt praktiskās iemaņas un sagatavo mūs reālajai darba videi.
+        Šāda vide sekmēja to, ka bez priekšzināšanām spēju atrast darbu Latvijas IT uzņēmumā "ZZ Dats" un pēc prakses palikt tur kā pilnvērtīgs programmētājs. 
+        Fakultātē strādā pieredzējuši pasniedzēji, kuri vienmēr ir gatavi sniegt atbalstu un padomus.
+        Līdz šim studijas Latvijas Universitātē ir bijušas vērtīgas gan akadēmiskajā, gan personīgajā izaugsmē.
+        Esmu lepns būt daļa no LU kopienas un ceru turpināt savu izglītību un karjeru IT jomā, balstoties uz stipro pamatu, ko esmu ieguvis šeit.
       </LxRow>
       <LxRow :column-span="1">
         <img src="./img/Coat_of_Arms_of_Riga_small.png" alt="Rīgas ģērbonis">
